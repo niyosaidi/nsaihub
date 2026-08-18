@@ -65,7 +65,7 @@ export const content: Record<Language, LocalizedContent> = {
         { 
           id: 'ai-literacy', 
           title: 'AI Literacy & Productivity Training', 
-          instructor: 'E. Mutesi', 
+          instructor: 'Saidi Niyonzima', 
           duration: '4-8 Weeks', 
           imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80',
           bullets: [
@@ -217,7 +217,7 @@ export const content: Record<Language, LocalizedContent> = {
         { 
           id: 'ai-literacy', 
           title: 'Amahugurwa yo Kumenya AI no Kongera Umusaruro', 
-          instructor: 'E. Mutesi', 
+          instructor: 'Saidi Niyonzima', 
           duration: 'Ibyumweru 4-8', 
           imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80',
           bullets: [
