@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/">
-              <img className="h-14 w-auto transform hover:scale-105 transition-all duration-300" src="/Public/Images/NS%20Ai%20Hub%20Logo.png" alt="NS IT Consulting & Training Logo" referrerPolicy="no-referrer" />
+              <img className="h-14 w-auto transform hover:scale-105 transition-all duration-300" src="/Images/NS%20Ai%20Hub%20Logo.png" alt="NS IT Consulting & Training Logo" referrerPolicy="no-referrer" />
             </Link>
           </div>
           <div className="hidden lg:block">
@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
             <button
               onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
               type="button"
-              className="bg-slate-50 inline-flex items-center justify-center p-2.5 rounded-xl text-slate-600 hover:text-cyan-500 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-offse..."
+              className="bg-slate-50 inline-flex items-center justify-center p-2.5 rounded-xl text-slate-600 hover:text-cyan-500 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
