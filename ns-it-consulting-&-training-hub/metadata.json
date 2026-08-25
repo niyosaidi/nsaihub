@@ -1,9 +1,0 @@
-{
-  "name": "NS IT Consulting & Training Hub",
-  "description": "A comprehensive web application for NS IT Consulting and Training in Rwanda. It serves as a central hub to showcase IT services, AI solutions, deliver online training, and streamline client interactions.",
-  "requestFramePermissions": [],
-  "prompt": "",
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
