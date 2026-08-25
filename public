@@ -1,0 +1,12 @@
+{
+  "owner": "niyosaidi",
+  "repo": "nsaihub",
+  "branch_name": "add/public-images-folder"
+}
+{
+  "owner": "niyosaidi",
+  "repo": "nsaihub",
+  "path": "public/images/.gitkeep",
+  "content": "",
+  "message": "chore: create public/images directory for storing image assets"
+}
