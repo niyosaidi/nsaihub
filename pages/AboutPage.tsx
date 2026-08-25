@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => {
                     <p className="mt-4 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto">
                         {language === 'en'
                             ? 'Pioneering technical excellence and accessible technology mentoring in Rwanda.'
-                            : 'Urufatiro rwa tekiniki n’amahugurwa bizewe mu muco wa tekiniki mu Rwanda.'}
+                            : 'Urufatiro rwa tekiniki n'amahugurwa bizewe mu muco wa tekiniki mu Rwanda.'}
                     </p>
                 </div>
             </section>
@@ -42,7 +42,7 @@ export const AboutPage: React.FC = () => {
                         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                             {language === 'en'
                                 ? 'Bridging the digital divide through accessible AI education and enterprise IT solutions.'
-                                : 'Gukuraho ikinyuranyo cya digitali binyuze mu nyandiko z’ubuntu za AI, amahugurwa ngiro, n’ibisubizo byizewe by’ikoranabuhanga ry’ibigo.'}
+                                : 'Gukuraho ikinyuranyo cya digitali binyuze mu nyandiko z'ubuntu za AI, amahugurwa ngiro, n'ibisubizo byizewe by'ikoranabuhanga ry'ibigo.'}
                         </p>
                     </div>
 
@@ -58,7 +58,7 @@ export const AboutPage: React.FC = () => {
                         <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                             {language === 'en'
                                 ? 'To lead and empower Rwanda\'s workforce into an AI-driven knowledge economy, ensuring digital opportunities are localized, secure, and globally competitive.'
-                                : 'Kuyobora n’ubumenyi bwuzuye mu kubaka ubukungu bw’igihugu bushingiye ku bumenyi rwa AI, hashingiwe ku mutekano no gukorera mu mucyo.'}
+                                : 'Kuyobora n'ubumenyi bwuzuye mu kubaka ubukungu bw'igihugu bushingiye ku bumenyi rwa AI, hashingiwe ku mutekano no gukorera mu mucyo.'}
                         </p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ export const AboutPage: React.FC = () => {
                                 <div className="relative bg-slate-950 rounded-3xl overflow-hidden p-2 shadow-xl">
                                     <img 
                                         className="w-full max-w-sm h-auto rounded-2xl object-cover hover:scale-102 transition-transform duration-300" 
-                                        src="https://i.imgur.com/eGLsr3e.png" 
+                                        src="/Images/CEO%20of%20NS%20Ai%20Hub.png" 
                                         alt="Saidi Niyonzima - Founder" 
                                         referrerPolicy="no-referrer"
                                     />
@@ -96,20 +96,22 @@ export const AboutPage: React.FC = () => {
                                 <p className="text-base text-cyan-600 font-bold mt-1">
                                     {language === 'en' 
                                         ? 'Founder, ICT Instructor, AI Specialist & Infrastructure Technician' 
-                                        : 'Uwashinze ikigo, Umwarimu wa ICT, Inzobere ya AI & Umukanishi w’Imiyoboro'}
+                                        : 'Uwashinze ikigo, Umwarimu wa ICT, Inzobere ya AI & Umukanishi w'Imiyoboro'}
                                 </p>
                             </div>
 
                             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                                 {language === 'en'
-                                    ? 'Saidi Niyonzima is an accomplished ICT Specialist, AI practitioner, and veteran systems infrastructure technician with over 10 years of hands-on experience designing local area networks, hardware diagnostics, and enterprise systems deployment in Rwanda.'
-                                    : 'Saidi Niyonzima ni inzobere mu bya ICT, ukora kinyamwuga mubijyanye na AI, ndetse n’umunyaburambe mu kubaka imiyoboro y’itumanaho rya tekiniki mu Rwanda umaze imyaka 10 abikora kinyamwuga.'}
+                                    ? 'Saidi Niyonzima is an accomplished ICT Specialist, AI practitioner, and veteran systems infrastructure technician with over 10 years of hands-on experience building enterprise-grade network architectures and deploying AI-powered business automation solutions across Rwanda.'
+                                    : 'Saidi Niyonzima ni inzobere mu bya ICT, ukora kinyamwuga mubijyanye na AI, ndetse n'umunyaburambe mu kubaka imiyoboro y'itumanaho rya tekiniki mu Rwanda na mu mahanga. Afite uburambe burambuye.'
+                                }
                             </p>
 
                             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                                 {language === 'en'
-                                    ? 'Under his leadership, NS IT Consulting & Training operates as a localized digital transformation catalyst—empowering small businesses, regional library networks, and public institutions to optimize workflows with customized Generative AI pipelines while maintaining a pristine IT security layer.'
-                                    : 'Ayoboye neza itsinda rya NS IT Consulting & Training nk’umusemburo w’impinduramatwara ya digitale—gufasha ibigo bito, amasomero, n’inzego za leta koroshya imikorere binyuze mu bikoresho rya AI ndetse n’umutekano ukomeye w’itumanaho.'}
+                                    ? 'Under his leadership, NS IT Consulting & Training operates as a localized digital transformation catalyst—empowering small businesses, regional library networks, governmental IT offices, and corporate teams through tailored technical training and strategic enterprise automation consulting.'
+                                    : 'Ayoboye neza itsinda rya NS IT Consulting & Training nk'umusemburo w'impinduramatwara ya digitale—gufasha ibigo bito, amasomero, n'inzego za leta kugira ngo babe neza mu gukoresha tekiniki n'ubumenyi.'
+                                }
                             </p>
 
                             {/* Contact quick links */}
@@ -141,7 +143,7 @@ export const AboutPage: React.FC = () => {
                     <p className="mt-3 text-slate-500 text-sm">
                         {language === 'en'
                             ? 'Our expertise is certified by premier global institutes to guarantee enterprise-level standardizations.'
-                            : 'Ubumenyi n’ubuhanga bwacu bwemejwe n’ibigo bikomeye ku isi mu rwego rwo gukora kinyamwuga.'}
+                            : 'Ubumenyi n'ubuhanga bwacu bwemejwe n'ibigo bikomeye ku isi mu rwego rwo gukora kinyamwuga.'}
                     </p>
                 </div>
 
@@ -149,7 +151,7 @@ export const AboutPage: React.FC = () => {
                     {[
                         { title: 'Cisco Certified', detail: 'Advanced network configurations, hardware routing protocols, LAN security optimization.', code: 'Cisco Routing & Switching' },
                         { title: 'Google Certified', detail: 'Professional Cloud Architecture, technical workspace deployment, analytics solutions.', code: 'Google Cloud & IT Support' },
-                        { title: 'ILO Certified', detail: 'Business development methodologies & SMB growth advising strategies under International Labour Organization.', code: 'International Labour Org.' },
+                        { title: 'ILO Certified', detail: 'Business development methodologies & SMB growth advising strategies under International Labour Organization.', code: 'International Labour Org' },
                         { title: 'Photostart Certified', detail: 'Digital branding, visual content creation storyboarding, media creation pipelines.', code: 'Visual Media & Storyboarding' }
                     ].map((cert, index) => (
                         <div key={index} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-cyan-500/20 transition-all flex flex-col justify-between">
