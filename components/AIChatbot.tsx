@@ -61,7 +61,7 @@ export const AIChatbot: React.FC = () => {
       <div className="fixed bottom-5 right-5 z-50">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-[#0A2342] text-white p-4 rounded-full shadow-lg hover:bg-[#1e3a5f] transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2CA58D]"
+          className="bg-[#0A2342] text-white p-4 rounded-full shadow-lg hover:bg-[#1e3a5f] transition-transform transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           aria-label="Toggle AI Chatbot"
         >
           {isOpen ? <XMarkIcon className="w-6 h-6" /> : <ChatBubbleLeftRightIcon className="w-6 h-6" />}
@@ -83,7 +83,7 @@ export const AIChatbot: React.FC = () => {
                 <div className={`max-w-[80%] p-3 rounded-2xl ${msg.sender === 'user' ? 'bg-[#0A2342] text-white rounded-br-none' : 'bg-gray-100 text-gray-800 rounded-bl-none'}`}>
                   <p className="text-sm">{msg.text}</p>
                 </div>
-                 {msg.sender === 'user' && <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"><UserCircleIcon className="w-6 h-6 text-gray-500" /></div>}
+                {msg.sender === 'user' && <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"><UserCircleIcon className="w-6 h-6 text-gray-500" /></div>}
               </div>
             ))}
             {isLoading && (
