@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocalization } from '../context/LocalizationContext';
 import { Course } from '../types';
-import { CheckCircle2, User, Clock, ArrowRight, BookOpen, Send, Calendar, Mail, FileText, Check, Phone, ExternalLink, Sparkles } from 'lucide-react';
+import { CheckCircle2, User, Clock, ArrowRight, BookOpen, Send, Check, ExternalLink } from 'lucide-react';
 
 interface ExtendedCourse extends Course {
   audience: string[];
@@ -45,8 +45,8 @@ const detailedCourses: ExtendedCourse[] = [
     ],
     curriculumRw: [
       'Prompt Engineering: Gukoresha neza ChatGPT, Gemini, na Claude',
-      'Automated Drafting: Kwikoresha mu kwandika raporo n’amakuru y’ubucuruzi',
-      'AI Workflow Optimization: Kongera umusaruro w’ibigo binyuze muri AI'
+      'Automated Drafting: Kwikoresha mu kwandika raporo n'amakuru y'ubucuruzi',
+      'AI Workflow Optimization: Kongera umusaruro w'ibigo binyuze muri AI'
     ]
   },
   {
@@ -63,9 +63,9 @@ const detailedCourses: ExtendedCourse[] = [
       'Networking & Wi-Fi: Local router topology setups, secure cabling, and LAN routing optimization'
     ],
     curriculumRw: [
-      'Gusuzuma ibibazo bya PC: Guteranya mudasobwa, kongera umuvuduko n’ibikoresho',
+      'Gusuzuma ibibazo bya PC: Guteranya mudasobwa, kongera umuvuduko n'ibikoresho',
       'Gushyiraho OS: Gukaza umutekano wa Windows, macOS, na Linux',
-      'Imiyoboro n’itumanaho: Gushyiraho Wi-Fi, gucunga router n’insinga'
+      'Imiyoboro n'itumanaho: Gushyiraho Wi-Fi, gucunga router n'insinga'
     ]
   },
   {
@@ -82,9 +82,9 @@ const detailedCourses: ExtendedCourse[] = [
       'WordPress CMS Masterclass: Building custom web storefronts with premium templates'
     ],
     curriculumRw: [
-      'Ikirango n’Isura y’Ikigo: Gushushanya ibirango bihebuje (.SVG, .AI)',
+      'Ikirango n'Isura y'Ikigo: Gushushanya ibirango bihebuje (.SVG, .AI)',
       'Short-form Video: Gutunganya amashusho magufi ahagaze kuri TikTok',
-      'WordPress CMS: Kubaka imbuga z’ubucuruzi no kuzitangiza'
+      'WordPress CMS: Kubaka imbuga z'ubucuruzi no kuzitangiza'
     ]
   }
 ];
@@ -172,7 +172,7 @@ export const TrainingPage: React.FC = () => {
           <p className="mt-4 text-lg text-slate-600">
             {language === 'en'
               ? 'Join our premium certified programs in Kigali designed to equip youth, creatives, and business teams with robust modern digital skillsets.'
-              : 'Yandikire amahugurwa ngiro anyuranye i Kigali yateguriwe guha urubyiruko n’abakozi b’ibigo ubumenyi bugezweho bwa digital.'}
+              : 'Yandikire amahugurwa ngiro anyuranye i Kigali yateguriwe guha urubyiruko n'abakozi b'ibigo ubumenyi bugezweho bwa digital.'}
           </p>
         </div>
 
@@ -297,7 +297,7 @@ export const TrainingPage: React.FC = () => {
                     </h3>
                     <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                       {language === 'en'
-                        ? `Thank you, ${formData.fullName || 'Student'}. We have received your application for the ${detailedCourses.find(c => c.id === formData.chosenCourse)?.title || 'selected course'}. Our academic admissions team will contact you directly via WhatsApp / Email.`
+                        ? `Thank you, ${formData.fullName || 'Student'}. We have received your application for the ${detailedCourses.find(c => c.id === formData.chosenCourse)?.title || 'selected course'}. Our team will contact you via WhatsApp or Email within 24 hours.`
                         : `Murakoze, ${formData.fullName || 'Mugenerwabikorwa'}. Twakiriye ubusabe bwawe. Itsinda ryacu rirakwandikira kuri WhatsApp cyangwa Imeri.`}
                     </p>
                   </div>
@@ -422,7 +422,7 @@ export const TrainingPage: React.FC = () => {
                         name="chosenCourse"
                         value={formData.chosenCourse}
                         onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800 font-medium"
+                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
                       >
                         {detailedCourses.map(c => (
                           <option key={c.id} value={c.id}>{c.title} ({c.duration})</option>
@@ -464,7 +464,7 @@ export const TrainingPage: React.FC = () => {
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="w-full px-5 py-3.5 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-cyan-500/20 hover:scale-101 active:scale-99 transition-all text-center flex items-center justify-center gap-2 text-xs disabled:opacity-75"
+                      className="w-full px-5 py-3.5 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-cyan-500/30 hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-75 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <span>{language === 'en' ? 'Processing Application...' : 'Gutunganya Ubusabe...'}</span>
@@ -500,5 +500,4 @@ export const TrainingPage: React.FC = () => {
     </div>
   );
 };
-
 
