@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
               type="button"
               className="bg-slate-50 inline-flex items-center justify-center p-2.5 rounded-xl text-slate-600 hover:text-cyan-500 hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
               aria-controls="mobile-menu"
-              aria-expanded="false"
+              aria-expanded={isMobileMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
             </button>
