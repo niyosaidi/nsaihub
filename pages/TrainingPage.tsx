@@ -11,6 +11,25 @@ interface ExtendedCourse extends Course {
 }
 
 const detailedCourses: ExtendedCourse[] = [
+ {
+    id: 'ict-basic',
+    title: 'ICT Basic Skills Training',
+    instructor: 'Saidi Niyonzima',
+    duration: '3-4 Weeks',
+    imageUrl: '/Images/ICT Teacher and student.jpeg',
+    audience: ['For Beginners', 'For Job Seekers', 'For Small Business Staff'],
+    audienceRw: ['Abatangira', 'Abashaka Akazi', 'Abakozi b\'Ibigo Bito'],
+    curriculum: [
+      'Computer Fundamentals: Operating Windows/macOS, file management, typing & essential shortcuts',
+      'Office Productivity Tools: Microsoft Word, Excel spreadsheets, and PowerPoint presentation design',
+      'Internet Literacy & Email Essentials: Web navigation, safe online communication, and cloud storage basics (Google Drive/OneDrive)'
+    ],
+    curriculumRw: [
+      'Ibanze kuri Mudasobwa: Gukoresha Windows/macOS, kubika no gupanga dosiye, no kwandika mu buryo bwihuse',
+      'Ibikoresho byo mu Biro: Gukoresha Microsoft Word, Excel, no gukora za PowerPoint',
+      'Ibanze kuri Interineti n\'Imeri: Gushakisha ku mbuga, itumanaho rya imeri, no kubika ibintu kuri Cloud (Google Drive)'
+    ]
+  },
   {
     id: 'ai-literacy',
     title: 'AI Literacy & Productivity Training',
@@ -28,25 +47,6 @@ const detailedCourses: ExtendedCourse[] = [
       'Prompt Engineering: Gukoresha neza ChatGPT, Gemini, na Claude',
       'Automated Drafting: Kwikoresha mu kwandika raporo n’amakuru y’ubucuruzi',
       'AI Workflow Optimization: Kongera umusaruro w’ibigo binyuze muri AI'
-    ]
-  },
-  {
-    id: 'ict-basic',
-    title: 'ICT Basic Skills Training',
-    instructor: 'Saidi Niyonzima',
-    duration: '3-4 Weeks',
-    imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80',
-    audience: ['For Beginners', 'For Job Seekers', 'For Small Business Staff'],
-    audienceRw: ['Abatangira', 'Abashaka Akazi', 'Abakozi b\'Ibigo Bito'],
-    curriculum: [
-      'Computer Fundamentals: Operating Windows/macOS, file management, typing & essential shortcuts',
-      'Office Productivity Tools: Microsoft Word, Excel spreadsheets, and PowerPoint presentation design',
-      'Internet Literacy & Email Essentials: Web navigation, safe online communication, and cloud storage basics (Google Drive/OneDrive)'
-    ],
-    curriculumRw: [
-      'Ibanze kuri Mudasobwa: Gukoresha Windows/macOS, kubika no gupanga dosiye, no kwandika mu buryo bwihuse',
-      'Ibikoresho byo mu Biro: Gukoresha Microsoft Word, Excel, no gukora za PowerPoint',
-      'Ibanze kuri Interineti n\'Imeri: Gushakisha ku mbuga, itumanaho rya imeri, no kubika ibintu kuri Cloud (Google Drive)'
     ]
   },
   {
