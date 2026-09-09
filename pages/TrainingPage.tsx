@@ -45,8 +45,8 @@ const detailedCourses: ExtendedCourse[] = [
     ],
     curriculumRw: [
       'Prompt Engineering: Gukoresha neza ChatGPT, Gemini, na Claude',
-      'Automated Drafting: Kwikoresha mu kwandika raporo n'amakuru y'ubucuruzi',
-      'AI Workflow Optimization: Kongera umusaruro w'ibigo binyuze muri AI'
+      'Automated Drafting: Kwikoresha mu kwandika raporo n\'amakuru y\'ubucuruzi',
+      'AI Workflow Optimization: Kongera umusaruro w\'ibigo binyuze muri AI'
     ]
   },
   {
@@ -63,9 +63,9 @@ const detailedCourses: ExtendedCourse[] = [
       'Networking & Wi-Fi: Local router topology setups, secure cabling, and LAN routing optimization'
     ],
     curriculumRw: [
-      'Gusuzuma ibibazo bya PC: Guteranya mudasobwa, kongera umuvuduko n'ibikoresho',
+      'Gusuzuma ibibazo bya PC: Guteranya mudasobwa, kongera umuvuduko n\'ibikoresho',
       'Gushyiraho OS: Gukaza umutekano wa Windows, macOS, na Linux',
-      'Imiyoboro n'itumanaho: Gushyiraho Wi-Fi, gucunga router n'insinga'
+      'Imiyoboro n\'itumanaho: Gushyiraho Wi-Fi, gucunga router n\'insinga'
     ]
   },
   {
@@ -82,9 +82,9 @@ const detailedCourses: ExtendedCourse[] = [
       'WordPress CMS Masterclass: Building custom web storefronts with premium templates'
     ],
     curriculumRw: [
-      'Ikirango n'Isura y'Ikigo: Gushushanya ibirango bihebuje (.SVG, .AI)',
+      'Ikirango n\'Isura y\'Ikigo: Gushushanya ibirango bihebuje (.SVG, .AI)',
       'Short-form Video: Gutunganya amashusho magufi ahagaze kuri TikTok',
-      'WordPress CMS: Kubaka imbuga z'ubucuruzi no kuzitangiza'
+      'WordPress CMS: Kubaka imbuga z\'ubucuruzi no kuzitangiza'
     ]
   }
 ];
@@ -150,7 +150,6 @@ export const TrainingPage: React.FC = () => {
       setIsSubmitted(true);
     } catch (error) {
       console.error('Error submitting enrollment form to Formspree:', error);
-      // Proceed to show confirmation
       setIsSubmitted(true);
     } finally {
       setIsSubmitting(false);
@@ -172,7 +171,7 @@ export const TrainingPage: React.FC = () => {
           <p className="mt-4 text-lg text-slate-600">
             {language === 'en'
               ? 'Join our premium certified programs in Kigali designed to equip youth, creatives, and business teams with robust modern digital skillsets.'
-              : 'Yandikire amahugurwa ngiro anyuranye i Kigali yateguriwe guha urubyiruko n'abakozi b'ibigo ubumenyi bugezweho bwa digital.'}
+              : 'Yandikire amahugurwa ngiro anyuranye i Kigali yateguriwe guha urubyiruko n\'abakozi b\'ibigo ubumenyi bugezweho bwa digital.'}
           </p>
         </div>
 
