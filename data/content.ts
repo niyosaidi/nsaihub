@@ -105,16 +105,16 @@ export const content: Record<Language, LocalizedContent> = {
       subtitle: 'What our clients say about us.',
       items: [
         { id: 't1', quote: "NS IT's AI-powered customer support transformed our workflow. We've seen a 40% increase in efficiency.", clientName: 'Mucyo', company: 'Kigali Innovations' },
-        { id: 't2', quote: "The SEO training was incredibly insightful. Our website traffic has doubled in just three months. Highly recommended!", clientName: 'Anitha', company: 'Rwanda Crafts Co.' },
+        { id: 't2', quote: "The training was incredibly insightful. Our business has improved significantly. Highly recommended!", clientName: 'Anitha', company: 'Rwanda Crafts' },
         { id: 't3', quote: "Their team designed and developed a beautiful, functional website that perfectly represents our brand. The process was seamless.", clientName: 'David', company: 'Lakeside Hotel' },
       ],
     },
     about: {
       title: 'About NS IT Consulting & Training',
       missionTitle: 'Our Mission',
-      missionText: 'To be a catalyst for digital transformation in Rwanda and beyond, providing innovative IT solutions and high-quality skills training that empower businesses and individuals to thrive in the global digital economy.',
+      missionText: 'To be a catalyst for digital transformation in Rwanda and beyond, providing innovative IT solutions and high-quality skills training that empower businesses and individuals to thrive in the digital economy.',
       visionTitle: 'Our Vision',
-      visionText: 'To be the leading and most trusted technology partner in the region, recognized for our commitment to excellence, integrity, and contributing to Rwanda\'s journey as a knowledge-based economy.',
+      visionText: 'To be the leading and most trusted technology partner in the region, recognized for our commitment to excellence, integrity, and contributing to Rwanda\'s journey as a knowledge-driven economy.',
       teamTitle: 'Meet Our Experts',
     },
     contact: {
@@ -147,7 +147,7 @@ export const content: Record<Language, LocalizedContent> = {
     chatbot: {
       greeting: "Hello! I'm the NS IT assistant. How can I help you today? You can ask me about our services, training, or how to book a consultation.",
       placeholder: 'Ask about services or training...',
-      systemInstruction: "You are a friendly and helpful assistant for NS IT Consulting and Training, a company in Rwanda. Your role is to answer questions about our services (IT Technical Services, Ai Solutions, Business Support, Digital Marketing), training courses (Social Media, SEO, AI, Web Design), and how to book a consultation. Be concise and professional. If you don't know an answer, advise the user to contact us directly at nsaihub25@gmail.com. Do not answer questions outside of this scope."
+      systemInstruction: "You are a friendly and helpful assistant for NS IT Consulting and Training, a company in Rwanda. Your role is to answer questions about our services (IT Technical Services, AI Integration, Web Development), training programs, and how clients can book consultations. Always be professional, helpful, and informative."
     },
     footer: {
         about: "Your partner in digital transformation, based in the heart of Africa.",
@@ -257,16 +257,16 @@ export const content: Record<Language, LocalizedContent> = {
       subtitle: 'Ibyo abakiriya bacu bavuga.',
       items: [
         { id: 't1', quote: "Ubufasha bw'abakiriya bukoresha AI bwa NS IT bwahinduye imikorere yacu. Twabonye ubwiyongere bwa 40% mu musaruro.", clientName: 'Mucyo', company: 'Kigali Innovations' },
-        { id: 't2', quote: "Amahugurwa ya SEO yari meza cyane. Umubare w'abasura urubuga rwacu wikubye kabiri mu mezi atatu gusa. Turabibashimira cyane!", clientName: 'Anitha', company: 'Rwanda Crafts Co.' },
+        { id: 't2', quote: "Amahugurwa yari meza cyane. Ubucuruzi bwacu bwanarimuye cyane. Turabibashimira cyane!", clientName: 'Anitha', company: 'Rwanda Crafts' },
         { id: 't3', quote: "Itsinda ryabo ryakoze urubuga rwiza kandi rukora neza ruhagarariye ikirango cyacu. Byari byoroshye cyane.", clientName: 'David', company: 'Lakeside Hotel' },
       ],
     },
     about: {
       title: 'Abo Turi Bo: NS IT Consulting & Training',
       missionTitle: 'Integano Yacu',
-      missionText: 'Kuba umusemburo w’impinduramatwara ya digitale mu Rwanda no hanze, dutanga ibisubizo by’ikoranabuhanga bigezweho n’amahugurwa y’ubumenyi afasha ibigo n’abantu ku giti cyabo gutera imbere mu bukungu bwa digitale ku isi.',
+      missionText: 'Kuba umusemburo w\'impinduramatwara ya digitale mu Rwanda no hanze, dutanga ibisubizo by\'ikoranabuhanga bigezweho n\'amahugurwa y\'ubumenyi afasha ibigo n\'abantu ku giti cyabo kubaho neza mu cyeconomy cydigitale.',
       visionTitle: 'Icyerekezo Cyacu',
-      visionText: 'Kuba umufatanyabikorwa wizewe kandi w’imbere mu ikoranabuhanga mu karere, uzwiho ubuhanga, ubunyangamugayo, no kugira uruhare mu rugendo rw’u Rwanda rwo kuba igihugu gishingiye ku bumenyi.',
+      visionText: 'Kuba umufatanyabikorwa wizewe kandi w\'imbere mu ikoranabuhanga mu karere, uzwiho ubuhanga, ubunyangamugayo, no kugira uruhare mu rugendo rw\'u Rwanda rwo kuba igihugu gishinzwe ubumenyi.',
       teamTitle: 'Hura n\'Inzobere Zacu',
     },
     contact: {
@@ -299,7 +299,7 @@ export const content: Record<Language, LocalizedContent> = {
     chatbot: {
         greeting: "Muraho! Ndi umufasha wa NS IT. Nagufasha iki uyu munsi? Ushobora kumbaza ibijyanye na serivisi zacu, amahugurwa, cyangwa uko wasaba ubujyanama.",
         placeholder: 'Baza kuri serivisi cyangwa amahugurwa...',
-        systemInstruction: "Uri umufasha w'icyubahiro kandi ufasha muri NS IT Consulting and Training, ikigo cyo mu Rwanda. Inshingano yawe ni ugusubiza ibibazo bijyanye na serivisi zacu (Serivisi za Tekiniki za IT, Ibisubizo bya Ai, Ubufasha mu bucuruzi, Kwamamaza mu bya Digitali), amahugurwa (Imbuga Nkoranyambaga, SEO, AI, Gukora Imbuga), n'uko wasaba ubujyanama. Vuga mu magambo make kandi kinyamwuga. Niba hari ikibazo utazi igisubizo, gira inama umukoresha kwandikira kuri nsaihub25@gmail.com. Ntusubize ibibazo bitari muri uru rwego."
+        systemInstruction: "Uri umufasha w'icyubahiro kandi ufasha muri NS IT Consulting and Training, ikigo cyo mu Rwanda. Inshingano yawe ni ugusubiza ibibazo bijyanye na serivisi zacu (Serivisi za IT, Guhuza AI, Gukora imbuga). Kora neza kandi utehe ubufasha."
     },
     footer: {
         about: "Umufatanyabikorwa wanyu mu mpinduramatwara ya digitale, mu mutima wa Afurika.",
