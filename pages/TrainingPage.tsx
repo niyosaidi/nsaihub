@@ -297,7 +297,7 @@ export const TrainingPage: React.FC = () => {
                     </h3>
                     <p className="mt-2 text-sm text-slate-600 leading-relaxed">
                       {language === 'en'
-                        ? `Thank you, ${formData.fullName || 'Student'}. We have received your application for the ${detailedCourses.find(c => c.id === formData.chosenCourse)?.title || 'selected course'}. Our team will contact you via WhatsApp or Email within 24 hours.`
+                        ? `Thank you, ${formData.fullName || 'Student'}. We have received your application for the ${detailedCourses.find(c => c.id === formData.chosenCourse)?.title || 'selected course'}. Our team will contact you via WhatsApp or Email to confirm your enrollment and discuss payment options.`
                         : `Murakoze, ${formData.fullName || 'Mugenerwabikorwa'}. Twakiriye ubusabe bwawe. Itsinda ryacu rirakwandikira kuri WhatsApp cyangwa Imeri.`}
                     </p>
                   </div>
@@ -379,7 +379,7 @@ export const TrainingPage: React.FC = () => {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder={language === 'en' ? 'e.g. Jean Paul Habimana' : 'Urugero: Jean Paul Habimana'} 
-                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                       />
                     </div>
 
@@ -395,7 +395,7 @@ export const TrainingPage: React.FC = () => {
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="you@domain.com" 
-                          className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                          className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                         />
                       </div>
                       <div>
@@ -409,7 +409,7 @@ export const TrainingPage: React.FC = () => {
                           value={formData.phone}
                           onChange={handleInputChange}
                           placeholder="+250 7..." 
-                          className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                          className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                         />
                       </div>
                     </div>
@@ -422,7 +422,7 @@ export const TrainingPage: React.FC = () => {
                         name="chosenCourse"
                         value={formData.chosenCourse}
                         onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                       >
                         {detailedCourses.map(c => (
                           <option key={c.id} value={c.id}>{c.title} ({c.duration})</option>
@@ -438,7 +438,7 @@ export const TrainingPage: React.FC = () => {
                         name="mode"
                         value={formData.mode}
                         onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                       >
                         <option value="In-person (Kigali)">{language === 'en' ? 'In-person Cohort (Kigali Campus)' : 'Kwicara mu Cyumba (Kigali)'}</option>
                         <option value="Hybrid / Evening">{language === 'en' ? 'Hybrid / Evening Track' : 'Kuvanga / Nimugoroba'}</option>
@@ -457,14 +457,14 @@ export const TrainingPage: React.FC = () => {
                         value={formData.message}
                         onChange={handleInputChange}
                         placeholder={language === 'en' ? 'Share your background or specific training goals...' : 'Andika ibyo wifuza ko twakwigisha cyangwa ibibazo ufite...'}
-                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-800"
+                        className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 text-slate-700"
                       ></textarea>
                     </div>
 
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="w-full px-5 py-3.5 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-cyan-500/30 hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-75 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full px-5 py-3.5 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-cyan-500/30 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <span>{language === 'en' ? 'Processing Application...' : 'Gutunganya Ubusabe...'}</span>
@@ -500,4 +500,3 @@ export const TrainingPage: React.FC = () => {
     </div>
   );
 };
-
