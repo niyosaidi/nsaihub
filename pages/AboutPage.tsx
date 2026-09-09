@@ -76,7 +76,7 @@ export const AboutPage: React.FC = () => {
                                 <div className="relative bg-slate-950 rounded-3xl overflow-hidden p-2 shadow-xl">
                                     <img 
                                         className="w-full max-w-sm h-auto rounded-2xl object-cover hover:scale-102 transition-transform duration-300" 
-                                        src="/Images/CEO of NS Ai Hub.png" 
+                                        src="/images/CEO of NS Ai Hub.png" 
                                         alt="Saidi Niyonzima - Founder" 
                                         referrerPolicy="no-referrer"
                                     />
