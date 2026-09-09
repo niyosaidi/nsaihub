@@ -73,7 +73,7 @@ const portfolioItems: PortfolioItem[] = [
     descriptionRw: 'Twakoze amashusho magufi ahagaze kuri TikTok na Instagram dukoresheje ibikoresho bya AI ku gikorwa cy’ikigo gishya cy’ikoranabuhanga.',
     client: 'Vuba Services',
     year: '2025',
-    imageUrl: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/Images/Content creation class student and Teacher.jpeg',
     icon: Video
   },
   {
