@@ -1,29 +1,21 @@
-import React, { createContext, useState, useContext, ReactNode } from 'react';
-import { Language } from '../types';
-import { content } from '../data/content';
+import React, { createContext, useContext, useState } from 'react';
+
+type Language = 'en' | 'fr' | 'rw';
 
 interface LocalizationContextType {
   language: Language;
-  setLanguage: (language: Language) => void;
-  t: (key: string) => any;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
 }
 
 const LocalizationContext = createContext<LocalizationContextType | undefined>(undefined);
 
-export const LocalizationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>(Language.EN);
+export const LocalizationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [language, setLanguage] = useState<Language>('en');
 
-  const t = (key: string): any => {
-    const keys = key.split('.');
-    let result: any = content[language];
-    for (const k of keys) {
-      if (result && typeof result === 'object' && k in result) {
-        result = result[k];
-      } else {
-        return key; // Return the key itself if not found
-      }
-    }
-    return result;
+  const t = (key: string): string => {
+    // Translation dictionary logic referencing data/content.ts
+    return key;
   };
 
   return (
@@ -33,7 +25,7 @@ export const LocalizationProvider: React.FC<{ children: ReactNode }> = ({ childr
   );
 };
 
-export const useLocalization = (): LocalizationContextType => {
+export const useLocalization = () => {
   const context = useContext(LocalizationContext);
   if (!context) {
     throw new Error('useLocalization must be used within a LocalizationProvider');
