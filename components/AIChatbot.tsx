@@ -39,12 +39,17 @@ export const AIChatbot: React.FC = () => {
     setUserInput('');
     setIsLoading(true);
 
+const handleSendMessage = async () => {
   try {
-  const response = await sendMessageToGemini(userInput);
-  // process response
-} catch (error) {
-  console.error("Gemini API Error:", error);
-  // set friendly error state in UI
+    const response = await sendMessageToGemini(inputMessage);
+    setMessages((prev) => [...prev, { text: response, sender: 'bot' }]);
+  } catch (error) {
+    console.error("Gemini Error:", error);
+    setMessages((prev) => [
+      ...prev,
+      { text: "Sorry, I couldn't reach the AI service. Please try again.", sender: 'bot' }
+    ]);
+  }
 };
     try {
       const aiResponse = await getChatbotResponse(userInput, language);
