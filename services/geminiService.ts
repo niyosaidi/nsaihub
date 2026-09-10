@@ -6,6 +6,7 @@ import { content } from '../data/content';
 // Initialize the GoogleGenAI client with the API key from environment variables.
 // As per instructions, process.env.API_KEY is assumed to be pre-configured and available.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 let chatSessions: { [lang in Language]?: Chat } = {};
 
