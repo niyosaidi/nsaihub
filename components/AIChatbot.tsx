@@ -45,7 +45,7 @@ export const AIChatbot: React.FC = () => {
 } catch (error) {
   console.error("Gemini API Error:", error);
   // set friendly error state in UI
-}
+};
     try {
       const aiResponse = await getChatbotResponse(userInput, language);
       setMessages([...newMessages, { sender: 'ai', text: aiResponse }]);
