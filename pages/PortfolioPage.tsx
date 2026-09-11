@@ -37,7 +37,7 @@ const portfolioItems: PortfolioItem[] = [
     descriptionRw: 'Gushyiraho no guhindura sisitemu ya KOHA, gukora insinga z’imiyoboro n’imikorere ya seriveri ku kigo cy’amashanyarazi mu karere, cyakira abanyamuryango basaga 5,000.',
     client: 'Kigali Knowledge Hub',
     year: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/Library.jpg',
     icon: Folder
   },
   {
